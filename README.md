@@ -1,0 +1,1 @@
+# hyku-plugin-schema-yaml

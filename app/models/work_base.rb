@@ -5,7 +5,10 @@ module Hyku
     module WorkBase
       extend ActiveSupport::Concern
 
-      include Hyrax::Autopopulation::AutopopulationProperty
+      #TODO: re-add this
+      #include Hyrax::Autopopulation::AutopopulationProperty
+
+      #TODO: re-add Behavior
       #include HykuAddons::TaskMaster::WorkBehavior
 
       # TODO: Review indexing and switch to mostly _ssim instead of _tesim

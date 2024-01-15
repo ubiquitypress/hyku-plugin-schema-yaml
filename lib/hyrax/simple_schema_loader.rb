@@ -98,7 +98,7 @@ module Hyrax
     end
 
     def config_search_paths
-      [Rails.root, Hyrax::Engine.root, HykuAddons::Engine.root]
+      [Rails.root, Hyrax::Engine.root, HykuKnapsack::Engine.root, Hyku::Schema::Engine.root]
     end
   end
 end

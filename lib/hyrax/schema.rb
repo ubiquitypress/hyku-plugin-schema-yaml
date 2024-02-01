@@ -41,7 +41,7 @@ module Hyku
       #
       # @since 3.0.0
       def self.Schema(schema_name, **options)
-        Hyrax::Schema.new(schema_name, **options)
+        Hyku::Schema::Hyrax::Schema.new(schema_name, **options)
       end
 
       ##
@@ -64,7 +64,7 @@ module Hyku
         # @note use Hyrax::Schema(:my_schema) instead
         #
         # @api private
-        def initialize(schema_name, schema_loader: SimpleSchemaLoader.new)
+        def initialize(schema_name, schema_loader: Hyku::Schema::Hyrax::SimpleSchemaLoader.new)
           @name = schema_name
           @schema_loader = schema_loader
         end

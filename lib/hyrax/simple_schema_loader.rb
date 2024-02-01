@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 module Hyku
   module Schema
     module Hyrax
@@ -101,7 +100,7 @@ module Hyku
         end
 
         def config_search_paths
-          [Rails.root, Hyrax::Engine.root, HykuKnapsack::Engine.root]
+          [Rails.root, ::Hyrax::Engine.root, HykuKnapsack::Engine.root]
         end
       end
     end

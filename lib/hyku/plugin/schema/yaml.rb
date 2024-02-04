@@ -6,10 +6,12 @@ require "hyku/plugin/schema/yaml/hyrax/schema_generator"
 require "hyku/plugin/schema/yaml/hyrax/schema"
 require "hyku/plugin/schema/yaml/hyrax/simple_schema_loader"
 
-module Hyku::Plugin
-  module Schema
-    module Yaml
-      # Your code goes here...
+module Hyku
+  module Plugin
+    module Schema
+      module Yaml
+        # Your code goes here...
+      end
     end
   end
 end

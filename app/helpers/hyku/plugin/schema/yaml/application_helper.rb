@@ -1,7 +1,9 @@
-module Hyku::Plugin
-  module Schema
-    module Yaml
-      module ApplicationHelper
+module Hykum
+  module Plugin
+    module Schema
+      module Yaml
+        module ApplicationHelper
+        end
       end
     end
   end

@@ -9,7 +9,7 @@ module Hyku
 
           include HykuKnapsack::NoteBehavior
           include HykuKnapsack::SourceLocationBehavior
-          include Hyrax::Autopopulation::AutopopulationProperty
+          include ::Hyrax::Autopopulation::AutopopulationProperty
           include HykuKnapsack::TaskMaster::WorkBehavior
 
           # Needs to be defined before schema is included

@@ -1,4 +1,4 @@
-# Hyku::Schema::Yaml
+# Hyku::Plugin::Schema::Yaml
 Short description and motivation.
 
 ## Usage

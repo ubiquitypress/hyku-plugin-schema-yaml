@@ -7,7 +7,7 @@ module Hyku
           extend ActiveSupport::Concern
 
           included do
-            include Hyku::Schema::WorksControllerAdditionalMimeTypesBehavior
+            include Hyku::Plugin::Schema::WorksControllerAdditionalMimeTypesBehavior
             # Add other includes here
           end
         end

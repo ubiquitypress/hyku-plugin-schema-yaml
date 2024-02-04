@@ -1,2 +1,2 @@
-Hyku::Schema::Yaml::Engine.routes.draw do
+Hyku::Plugin::Schema::Yaml::Engine.routes.draw do
 end

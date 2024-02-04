@@ -3,7 +3,7 @@ module Hyku
     module Schema
       module Yaml
         class Engine < ::Rails::Engine
-          isolate_namespace Hyku::Schema::Yaml
+          isolate_namespace Hyku::Plugin::Schema::Yaml
         end
       end
     end

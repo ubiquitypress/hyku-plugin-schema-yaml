@@ -23,8 +23,8 @@ module Hyku
           #   end
           #
           # @since 3.0.0
-          def self.Indexer(schema_name, index_loader: Hyku::Schema::Hyrax::SimpleSchemaLoader.new)
-            Hyku::Schema::Hyrax::Indexer.new(index_loader.index_rules_for(schema: schema_name))
+          def self.Indexer(schema_name, index_loader: Hyku::Plugin::Schema::Hyrax::SimpleSchemaLoader.new)
+            Hyku::Plugin::Schema::Hyrax::Indexer.new(index_loader.index_rules_for(schema: schema_name))
           end
 
           ##

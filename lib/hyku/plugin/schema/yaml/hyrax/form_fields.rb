@@ -12,7 +12,7 @@ module Hyku
           #
           # @since 3.0.0
           def self.FormFields(schema_name, **options)
-            Hyku::Plugin::Schema::Hyrax::FormFields.new(schema_name, **options)
+            Hyku::Plugin::Schema::Yaml::Hyrax::FormFields.new(schema_name, **options)
           end
 
           ##
@@ -29,7 +29,7 @@ module Hyku
             # @param [#form_definitions_for] definition_loader
             #
             # @note use Hyrax::FormFields(:my_schema) instead
-            def initialize(schema_name, definition_loader: Hyku::Plugin::Schema::Hyrax::SimpleSchemaLoader.new)
+            def initialize(schema_name, definition_loader: Hyku::Plugin::Schema::Yaml::Hyrax::SimpleSchemaLoader.new)
               @name = schema_name
               @definition_loader = definition_loader
             end

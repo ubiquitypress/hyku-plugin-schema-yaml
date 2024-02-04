@@ -1,2 +1,2 @@
-//= link_directory ../javascripts/hyku/schema/yaml .js
-//= link_directory ../stylesheets/hyku/schema/yaml .css
+//= link_directory ../javascripts/hyku/plugin/schema/yaml .js
+//= link_directory ../stylesheets/hyku/plugin/schema/yaml .css

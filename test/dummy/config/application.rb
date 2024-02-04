@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "hyku/schema/yaml"
+require "hyku/plugin/schema/yaml"
 
 module Dummy
   class Application < Rails::Application

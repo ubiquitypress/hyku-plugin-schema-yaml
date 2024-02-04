@@ -1,12 +1,12 @@
 $:.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "hyku/schema/yaml/version"
+require "hyku/plugin/schema/yaml/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "hyku-schema-yaml"
-  spec.version     = Hyku::Schema::Yaml::VERSION
+  spec.name        = "hyku-plugin-schema-yaml"
+  spec.version     = Hyku::Plugin::Schema::Yaml::VERSION
   spec.authors     = ["Martin Simpson"]
   spec.email       = ["martin.simpson@ubiquitypress.com"]
   spec.homepage    = "https://github.com/ubiquitypress/hyku-plugin-schema-yaml"

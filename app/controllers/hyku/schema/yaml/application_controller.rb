@@ -1,4 +1,4 @@
-module Hyku
+module Hyku::Plugin
   module Schema
     module Yaml
       class ApplicationController < ActionController::Base

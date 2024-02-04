@@ -1,4 +1,4 @@
-module Hyku
+module Hyku::Plugin
   module Schema
     module Yaml
       module ApplicationHelper

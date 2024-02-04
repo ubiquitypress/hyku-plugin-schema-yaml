@@ -1,6 +1,4 @@
 require "hyku/plugin/schema/yaml/engine"
-require "hyku/plugin/schema/yaml/work_base"
-require "hyku/plugin/schema/yaml/work_form"
 require "hyku/plugin/schema/yaml/hyrax/form_fields"
 require "hyku/plugin/schema/yaml/hyrax/indexer"
 require "hyku/plugin/schema/yaml/hyrax/schema_generator"

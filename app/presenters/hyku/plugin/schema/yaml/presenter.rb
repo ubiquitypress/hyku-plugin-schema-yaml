@@ -5,27 +5,28 @@ module Hyku
     module Schema
       module Yaml
 
-      def self.Presenter(schema_name, schema_loader: Hyrax::SimpleSchemaLoader.new)
-        Presenter.new(schema_loader.index_rules_for(schema: schema_name))
-      end
-
-      ##
-      # @api private
-      #
-      class Presenter < Module
-        ##
-        # @param [Hash{Symbol => Symbol}] rules
-        def initialize(rules)
-          @rules = rules
+        def self.Presenter(schema_name, schema_loader: Hyrax::SimpleSchemaLoader.new)
+          Presenter.new(schema_loader.index_rules_for(schema: schema_name))
         end
 
-        private
+        ##
+        # @api private
+        #
+        class Presenter < Module
+          ##
+          # @param [Hash{Symbol => Symbol}] rules
+          def initialize(rules)
+            @rules = rules
+          end
 
-        def included(descendant)
-          rules = @rules
+          private
 
-          descendant.define_singleton_method :delegated_methods do |*_args|
-            rules.values.uniq
+          def included(descendant)
+            rules = @rules
+
+            descendant.define_singleton_method :delegated_methods do |*_args|
+              rules.values.uniq
+            end
           end
         end
       end

@@ -61,7 +61,10 @@ module Hyku
               super
 
               # Maintain a list of internal terms to help prevent them from being rendered as fields on the form
-              descendant.internal_terms = descendant.terms.difference(form_field_definitions.keys).sort
+
+              #TODO: Removed this as it seems not to be referenced anywhere?!
+              #descendant.internal_terms = descendant.terms.difference(form_field_definitions.keys).sort
+              
               remove_skippable!(descendant)
 
               form_field_definitions.each do |field_name, options|

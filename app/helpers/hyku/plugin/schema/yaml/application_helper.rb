@@ -1,4 +1,4 @@
-module Hykum
+module Hyku
   module Plugin
     module Schema
       module Yaml

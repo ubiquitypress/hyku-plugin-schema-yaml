@@ -3,7 +3,7 @@
   <%= render "records/edit_fields/default", f: f, key: key %>
 
 <% else %>
-  <% qualification_level_service = HykuAddons::QualificationLevelService.new %>
+  <% qualification_level_service = Hyku::Plugin::Schema::Yaml::QualificationLevelService.new %>
   <% selected = f.object[:qualification_level].empty? ? nil : f.object[:qualification_level] %>
   <% model = f.object.model.class.to_s.underscore %>
 

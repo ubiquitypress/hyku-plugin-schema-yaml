@@ -1,6 +1,6 @@
 <div data-toggleable-group="<%= type %>">
-	<% creator_inst_rel_options = HykuAddons::InstitutionalRelationshipService.new(model: f.object.model.class).select_active_options %>
-	<% creator_role_options = HykuAddons::RoleService.new(model: f.object.model.class).select_active_options %>
+	<% creator_inst_rel_options = Hyku::Plugin::Schema::Yaml::InstitutionalRelationshipService.new(model: f.object.model.class).select_active_options %>
+	<% creator_role_options = Hyku::Plugin::Schema::Yaml::RoleService.new(model: f.object.model.class).select_active_options %>
 	<% personal_fields = [
 		{ field_type: :text, field_slug: :creator_family_name, field_args: { data: { required: f.object.required?(:creator), required_group: :creator_name, on_blur: :toggle_required_group } } },
 		{ field_type: :text, field_slug: :creator_given_name, field_args: { data: { required: f.object.required?(:creator), required_group: :creator_name, on_blur: :toggle_required_group } } },

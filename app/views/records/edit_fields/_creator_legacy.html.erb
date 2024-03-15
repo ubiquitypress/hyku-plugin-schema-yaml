@@ -1,5 +1,5 @@
 <% template = f.object.model.class.to_s.underscore %>
-<% types = HykuAddons::NameTypeService.new.active_elements %>
+<% types = Hyku::Plugin::Schema::Yaml::NameTypeService.new.active_elements %>
 
 <!-- _creator_legacy -->
 <div

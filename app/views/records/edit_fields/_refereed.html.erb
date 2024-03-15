@@ -5,7 +5,7 @@
 
 <% else %>
   <%= f.input :refereed, as: :select,
-    collection: HykuAddons::RefereedService.new.select_active_options,
+    collection: Hyku::Plugin::Schema::Yaml::RefereedService.new.select_active_options,
     include_blank: true,
     input_html: { class: 'form-control' } %>
 <% end %>

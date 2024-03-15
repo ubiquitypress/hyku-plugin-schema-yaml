@@ -69,7 +69,7 @@ module Hyku
             def authority_for(term)
               return unless field_type_for(term) == "select"
 
-              "HykuAddons::#{term.classify}Service".safe_constantize&.name
+              "Hyku::Plugin::Schema::Yaml::#{term.classify}Service".safe_constantize&.name
             end
 
             # Try and find a file containing the subfield YAML, inside the config/schema/partials folder.
@@ -81,7 +81,7 @@ module Hyku
             end
 
             def field_partial_for(file_name)
-              file = File.open(HykuAddons::Engine.root.join("config", "metadata", "partials", "#{file_name}.yaml"))
+              file = File.open(Hyku::Plugin::Schema::Yaml::Engine.root.join("config", "metadata", "partials", "#{file_name}.yaml"))
               YAML.safe_load(file)
             rescue Errno::ENOENT
               nil

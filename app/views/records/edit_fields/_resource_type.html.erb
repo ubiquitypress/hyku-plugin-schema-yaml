@@ -5,7 +5,7 @@
 <% else %>
   <% model_name = f.object.model.class %>
   <%= f.input :resource_type, as: :select,
-    collection: HykuAddons::ResourceTypesService.new(model: model_name).select_active_options,
+    collection: Hyku::Plugin::Schema::Yaml::ResourceTypesService.new(model: model_name).select_active_options,
     include_blank: true,
     input_html: { name: "#{model_name.to_s.underscore}[resource_type][]", class: 'form-control' } %>
 <% end %>

@@ -3,7 +3,7 @@ module Hyku
   module Plugin
     module Schema
       module Yaml
-        class QaSelectService < Hyrax::QaSelectService
+        class QaSelectService < ::Hyrax::QaSelectService
           # model - CurationConcern model
           def initialize(authority_name, model: nil, locale: nil)
             @authority_name = authority_name
